@@ -1,0 +1,27 @@
+
+{% extends "layout.html" %}
+{% block title %}{{ styled_domain_name }}{% endblock %}
+{% block search_active %}active{% endblock %}
+
+{% block wikipageincludes %}
+    <script src="{{ url_for('core_gomden_blueprint.static', filename='js/my/gomden.js')}}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div id="gomden-container" class="container">
+<p>Search results for: {{ searchterm }}</p>
+{% if results|length %}
+    {% for result in results %}
+        <a href="{{url_for('core_gomden_blueprint.viewPage', pagename=result)}}">page:{{ result }}</a><br>
+    {% endfor %}
+{% else %}
+    <p>No pages match your search</p>
+{% endif %}
+
+</div>
+
+
+
+{% endblock %}
+

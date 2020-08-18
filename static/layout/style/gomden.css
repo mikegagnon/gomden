@@ -1,0 +1,32 @@
+.gomden-h1 { 
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 26pt;
+    font-weight: bold;
+}
+
+.gomden-h2 { 
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.gomden-title-page-name {
+    color: #aaa;
+}
+
+.gomden-missing-page-link {
+    color: red;
+}
+
+.gomden-disabled-text {
+    color: #aaa;
+}
+
+.gomden-content-license {
+    color: #aaa;
+}
+
+.gomden-apology-captcha {
+    background-color: pink;
+}
